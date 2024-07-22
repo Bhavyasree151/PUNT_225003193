@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<header>
+    <h1>Translation App</h1>
+</header>
+<main>
+    <section class="text-to-speech">
+        <h2>Text to Speech</h2>
+        <form>
+            <input type="text" id="tts-input" placeholder="Enter text to speak">
+            <select id="voice-select">
+                <option value="">Select a voice</option>
+            </select>
+            <button id="speak-btn">Speak</button>
+        </form>
+    </section>
+    <section class="speech-to-text">
+        <h2>Speech to Text</h2>
+        <button id="start-listening-btn">Start Listening</button>
+        <p id="transcript"></p>
+    </section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/speech-recognition@5.0.2/speech-recognition.min.js"></script>
+<script src="%PUBLIC_URL%/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/responsivevoice@1.12.0/responsivevoice.js"></script>
+<script src="%PUBLIC_URL%/index.js"></script>
+</body>
+</html>
